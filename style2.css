@@ -1,0 +1,57 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: "Yeah"; /* Same name as above */
+    src: url("./assets/joystix.otf") format('opentype'); /* Font file path and format */   
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3b3b3b; 
+    color: aliceblue;
+    font-family: 'Yeah';
+}
+
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex; /* Maintains flexbox behavior (optional) */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Vertically centers content (optional) */
+    flex-wrap: wrap;  /* Allows elements to wrap onto a new line if needed */
+}
+  
+.left-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;  /* Makes text elements behave like inline blocks */
+    width: 20%;  /* Define a width for each text block (adjust as needed) */
+    text-align: left; /* Maintain left/right alignment */
+}
+  
+.img {
+    display: inline-block;  /* Removed for consistency (use in specific image classes) */
+}
+  
+.container img:first-child {
+    width: 507px;
+    height: 606px;
+}
+  
+.container img:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+

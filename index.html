@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    
+    <title></title>
+</head>
+<body>
+
+    <div class="container">
+        <p class="left-text">Controles:<br><br> "A" move para esquerda <br><br> "D" move para direita <br><br> "Espaço" Atira
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+            
+        <img src="./assets/titleScreen.png" width="507px" height="606px">
+
+        <button id="myButton">
+            <a href="faq.html">
+                <img src="./assets/botaoManual.png" width="100px" height="100px">
+            </a>
+        </button>
+
+        <script defer>
+        const button = document.getElementById("myButton"); // Get the button element
+
+        // Attach event listener directly (no need for window.onload)
+        document.addEventListener("keydown", goToGame); 
+
+        function goToGame(event) {
+        console.log("Key pressed: " + event.key); // Debugging statement
+  
+        if (event.key === 'Enter') { // Check for Enter key (using event.key)
+            window.location.href = 'Game.html';
+            event.preventDefault(); // Optional: prevent default form submission
+        }
+    }
+          </script>
+
+    </div>
+</body>
+</html>
